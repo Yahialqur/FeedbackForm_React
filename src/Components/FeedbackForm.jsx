@@ -41,7 +41,7 @@ const FeedbackForm = () => {
     <nav>
     Tell Us What You Think
     </nav>
-      <form className="feedback-form">
+      <form onSubmit={handleSubmit} className="feedback-form">
         <h2>We'd Love to Hear From You!</h2>
         <p>Please share your feedback with us.</p>
         
@@ -60,8 +60,8 @@ const FeedbackForm = () => {
             onChange={handleChange}
         />
         <textarea
-            name='feeback'
-            placeholder='Your Feedback'
+            name="feedback"
+            placeholder="Your Feedback"
             value={formData.feedback}
             onChange={handleChange}
         ></textarea>
